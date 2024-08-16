@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Education Page</title>
+    <link rel="stylesheet" href="{% static 'visualize/main.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Your custom CSS styles -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 15px;">
+        <a class="navbar-brand" href="#" style="font-size: 24px;">
+            <strong>EduTrec</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home:logout' %}">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Cards -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Undergraduate</h5>
+                        <a href="{% url 'home:plot' 'ug' 0 %}" class="btn btn-primary">Bar Chart</a>
+                        <a href="{% url 'home:plot' 'ug' 1 %}" class="btn btn-primary">Pie Chart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Postgraduate</h5>
+                        <a href="{% url 'home:plot' 'pg' 0 %}" class="btn btn-primary">Bar Chart</a>
+                        <a href="{% url 'home:plot' 'pg' 1 %}" class="btn btn-primary">Pie Chart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ph.D.</h5>
+                        <a href="{% url 'home:plot' 'phd' 0 %}" class="btn btn-primary">Bar Chart</a>
+                        <a href="{% url 'home:plot' 'phd' 1 %}" class="btn btn-primary">Pie Chart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">M-Phil.</h5>
+                        <a href="{% url 'home:plot' 'mphil' 0%}" class="btn btn-primary">Bar Chart</a>
+                        <a href="{% url 'home:plot' 'mphil' 1%}" class="btn btn-primary">Pie Chart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Diploma</h5>
+                        <a href="{% url 'home:plot' 'di' 0 %}" class="btn btn-primary">Bar Chart</a>
+                        <a href="{% url 'home:plot' 'di' 1  %}" class="btn btn-primary">Pie Chart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">PG Diploma</h5>
+                        <a href="{% url 'home:plot' 'pgdi' 0 %}" class="btn btn-primary">Bar Chart</a>
+                        <a href="{% url 'home:plot' 'pgdi' 1 %}" class="btn btn-primary">Pie Chart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above card structure for other categories -->
+
+        </div>
+        <div class="row">
+            <!-- Repeat the above card structure for other categories -->
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Follow us on social media:</p>
+        <a href="#" class="btn btn-light">Facebook</a>
+        <a href="#" class="btn btn-light">Twitter</a>
+        <a href="#" class="btn btn-light">LinkedIn</a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

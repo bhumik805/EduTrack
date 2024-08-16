@@ -1,0 +1,115 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'home/assets/css/main.css' %}" />
+	</head>
+	<body class="is-preload" style="height: 80vh;">
+
+		<!-- Header -->
+			<section id="header">
+				<header class="major">
+					<h1>EduTrack</h1>
+					<p>Visualize Student Statistics Here</p>
+				</header>
+				<div class="container" style="background-color: rgba(255, 255, 255, 0);">
+					<ul class="actions special">
+						<li><a href="{% url 'home:login' %}" class="button primary scrolly">Login</a></li>
+						<li><a href="{% url 'home:register' %}" class="button primary scrolly">Register</a></li>
+					</ul>
+				</div>
+				<!-- <div class="container">
+					<ul class="actions special">
+						<li><a href="{% url 'home:register' %}" class="button primary scrolly">Register</a></li>
+					</ul>
+				</div> -->
+			</section>
+
+		
+		<!-- One -->
+			<!-- <section id="one" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>About The Data</h2>
+						</header>
+						<p>You can get to know about what number of students have enrolled in different fields and at various levels of education. </p>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</div>
+			</section> -->
+
+		<!-- Two -->
+			<!-- <section id="two" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>Tools Used</h2>
+						</header>
+						<p>The Application is built on Django, Plotly for statistical analysis and charts and Pandas for preprocessing the Data.</p>
+						<ul class="icons-grid">
+							<li>
+								<span class="icon solid major fa-database"></span>
+								<h3>Data</h3>
+							</li>
+							<li>
+								<span class="icon solid major fa-chart-line"></span>
+								<h3>Charts</h3>
+							</li>
+							<li>
+								<span class="icon solid major fa-code"></span>
+								<h3>Algo</h3>
+							</li>
+							<li>
+								<span class="icon solid major fa-table"></span>
+								<h3>Table</h3>
+							</li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</div>
+			</section> -->
+
+		<!-- Three 
+			<section id="three" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>What can you visualize</h2>
+						</header>
+						<p>Past Ten years of CPCB Data for the Ground Stations and its charts, some statistics like Mean, Median, Mode, Standard Deviation and cam also avail the functionality for downloading offline maps and charts.</p>
+					</div>
+					<a href="#footer" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		<!-- Four -->
+		
+
+		<!-- Footer -->
+			<section id="footer">
+				
+				<footer>
+					
+				</footer>
+			</section>
+
+		<!-- Scripts -->
+			<script src="{% static 'home/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'home/assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'home/assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'home/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'home/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'home/assets/js/util.js' %}"></script>
+			<script src="{% static 'home/assets/js/main.js' %}"></script>
+
+	</body>
+</html>

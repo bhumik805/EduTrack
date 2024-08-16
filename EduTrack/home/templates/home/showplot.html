@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'visualize/main.css' %}">
+    <title>Plot</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .back-button {
+        background-color: #3498db; /* Blue color */
+        color: #fff; /* White text color */
+        padding: 10px 20px; /* Adjust padding as needed */
+        text-decoration: none;
+        display: inline-block;
+        margin: 20px; /* Adjust margin as needed */
+        border-radius: 5px; /* Optional: Add rounded corners */
+    }
+    .plotly-graph-div {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.95)); /* Gradient background */
+    border-radius: 12px; /* Rounded corners for a softer look */
+    padding: 20px; /* Adjust padding as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    margin: auto;
+    /* Optional: Add transition for a smooth hover effect */
+    transition: background 0.3s ease-in-out;
+    }
+
+    .plotly-graph-div:hover {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8)); /* Invert gradient on hover */
+    }
+</style>
+<body>
+    
+    <a href="{% url 'home:ret' %}" class="back-button">Back</a>
+    {{t|safe}}
+
+    
+    
+
+</body>
+</html>
